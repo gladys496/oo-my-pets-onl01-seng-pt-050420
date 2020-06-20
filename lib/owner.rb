@@ -53,7 +53,8 @@ def feed_cats
 end 
 
 def sell_pets 
-  self.all.each {|alls| alls.mood = "nervous"}
+  self.all.select.clear {|pet| pet.mood = "nervous"}
+  
 end 
 
 
