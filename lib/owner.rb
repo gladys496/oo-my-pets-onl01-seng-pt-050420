@@ -52,10 +52,11 @@ def feed_cats
   self.cats.each {|cat| cat.mood = "happy"}
 end 
 
-def sell_pets 
-  self.all.select.clear {|pet| pet.mood = "nervous"}
-  
+ def sell_pets
+    self.cats.each do |cat|
+      self.cats.delete(cat)
+      cat.owner = nil
+      cat.mood = "nervous"
 end 
-
 
 end
