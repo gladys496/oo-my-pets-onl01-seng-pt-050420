@@ -64,6 +64,8 @@ end
         pet.mood = "nervous"
     end
 
-
+def list_pets 
+  
+end 
 
 end
