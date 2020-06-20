@@ -69,5 +69,4 @@ end
 end 
     "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
 
-  end 
 end
