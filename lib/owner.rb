@@ -64,9 +64,9 @@ end
         pet.mood = "nervous"
     end
 
- def self.reset_all
-        self.all.clear
-end 
-    "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
-
+  def list_pets
+        number_of_dogs = self.dogs.count
+        number_of_cats = self.cats.count
+        return "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
+    end
 end
