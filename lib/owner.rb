@@ -66,7 +66,7 @@ end
 
  def self.reset_all
         self.all.clear
-
+end 
     "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
 
   end 
