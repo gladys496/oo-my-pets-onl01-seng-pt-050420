@@ -53,11 +53,17 @@ def feed_cats
 end 
 
  def sell_pets
-    self.cats.each do |cat|
-      self.cats.delete(cat)
-      cat.owner = nil
-      cat.mood = "nervous"
-    end 
+   all_pets = self.cats + self.dogs
+   all_pets.each do |pet|
+    sell_pet(pet)
+        end
+    end
+
+    def sell_pet(pet)
+        pet.owner = nil
+        pet.mood = "nervous"
+    end
+
 end 
 
 end
