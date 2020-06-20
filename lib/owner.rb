@@ -56,7 +56,7 @@ end
     self.cats.each do |cat|
       self.cats.delete(cat)
       cat.owner = nil
-      cat.mood = "nervous"
+      cat.mood == "nervous"
     end 
 end 
 
